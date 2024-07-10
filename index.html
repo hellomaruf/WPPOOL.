@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wppool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart-config.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#EDEDED]">
+    <!-------------- navbar -------------->
+    <div class="bg-[#2042B6]">
+      <div
+        class="flex items-center justify-between h-24 max-w-[1400px] mx-auto"
+      >
+        <div class="">
+          <img src="Images/wppool-logo.png" alt="" />
+        </div>
+        <div class="flex items-center gap-4 text-white">
+          <button
+            class="border-2 h-10 w-10 rounded-full flex items-center justify-center text-xl"
+          >
+            <i class="ri-share-fill"></i>
+          </button>
+          <button class="border-2 rounded-full p-3 px-6">
+            Download the 2024 Report
+          </button>
+          <button class="text-2xl"><i class="ri-menu-line"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!--------------- Hero section --------------->
+    <div class="bg-[#2042B6] relative">
+      <div
+        class="relative flex items-center justify-center flex-col max-w-4xl mx-auto p-16"
+      >
+        <div class="absolute text-center space-y-2">
+          <h1 class="text-7xl font-play text-white font-serif">
+            The WPPOOL Index
+          </h1>
+          <p class="text-2xl text-white">
+            Monitor the performance of emerging, publicly traded, financial
+            technology companies
+          </p>
+        </div>
+        <img class="" src="Images/hero.png" alt="" />
+      </div>
+
+      <!-- stats -->
+      <div class="flex flex-col gap-10 absolute bottom-16 left-16">
+        <div class="">
+          <h2 class="text-4xl font-medium text-white font-serif">60</h2>
+          <p class="text-gray-300 text-base">Companies</p>
+        </div>
+        <div class="">
+          <h2 class="text-4xl font-medium text-white font-serif">$100B</h2>
+          <p class="text-gray-300 text-base">Market cap</p>
+        </div>
+        <div class="">
+          <h2 class="text-4xl font-medium text-white font-serif">3.5x</h2>
+          <p class="text-gray-300 text-base">Revenue multiple</p>
+        </div>
+        <div class="">
+          <h2 class="text-4xl font-medium text-white font-serif">60%</h2>
+          <p class="text-gray-300 text-base">LTM avg. revenue growth rate</p>
+        </div>
+      </div>
+    </div>
+
+    <!------------------- Chart section ------------------->
+    <div
+      class="max-w-[1400px] mx-auto my-10 bg-white shadow-md p-6 rounded-2xl"
+    >
+      <div class="grid grid-cols-9 gap-4">
+        <div class="col-span-2 bg-[#EFF3F6] p-4 rounded-xl">
+          <div class="flex flex-col gap-5">
+            <h3
+              class="p-4 bg-[#2042B6] text-white rounded-xl font-serif flex items-center justify-between font-play"
+            >
+              The Index <i class="ri-add-fill"></i>
+            </h3>
+            <h3
+              class="p-4 rounded-xl flex items-center justify-between font-serif"
+            >
+              The Index Tab Two <i class="ri-add-fill"></i>
+            </h3>
+            <h3
+              class="p-4 rounded-xl flex items-center justify-between font-serif"
+            >
+              The Index Tab Three <i class="ri-add-fill"></i>
+            </h3>
+            <h3
+              class="p-4 rounded-xl flex items-center justify-between font-serif"
+            >
+              The Index Tab Four <i class="ri-add-fill"></i>
+            </h3>
+            <h3
+              class="p-4 rounded-xl flex items-center justify-between font-serif"
+            >
+              The Index Tab Five <i class="ri-add-fill"></i>
+            </h3>
+          </div>
+        </div>
+        <div class="col-span-7">
+          <h2 class="text-4xl font-medium flex font-serif items-center gap-2">
+            <img src="Images/icon.png" alt="" srcset="" />
+            The WPPOOL Index
+          </h2>
+          <div class="flex items-center gap-4 justify-between my-8">
+            <div
+              class="flex items-center justify-between w-64 bg-[#F3F3F3] p-2 px-4 rounded-xl"
+            >
+              <h2 class="text-3xl font-serif font-medium text-[#FC714D]">
+                66.2%
+              </h2>
+              <p class="border-r-4 border-[#FC714D] pr-2 text-right">
+                WPPOOL <br />
+                Index
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between w-64 bg-[#F3F3F3] p-2 px-4 rounded-xl"
+            >
+              <h2 class="text-3xl font-serif font-medium text-[#7CA63A]">
+                +26.6%
+              </h2>
+              <p class="border-r-4 border-[#7CA63A] pr-2 text-right">
+                Google <br />
+                Index
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between w-64 bg-[#F3F3F3] p-2 px-4 rounded-xl"
+            >
+              <h2 class="text-3xl font-serif font-medium text-[#615DE3]">
+                +34.1%
+              </h2>
+              <p class="border-r-4 border-[#615DE3] pr-2 text-right">
+                Microsoft <br />
+                Index
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between w-64 bg-[#F3F3F3] p-2 px-4 rounded-xl"
+            >
+              <h2 class="text-3xl font-serif font-medium text-[#6F34A1]">
+                +17%
+              </h2>
+              <p class="border-r-4 border-[#6F34A1] pr-2 text-right">
+                Twitter <br />
+                Index
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 flex justify-between items-center">
+            <div class="flex gap-4">
+              <div class="">
+                <select
+                  id="countries"
+                  name="countries"
+                  class="mt-1 block w-56 py-2 px-3 border border-gray-300 bg-[#2042B6] text-white rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                >
+                  <option class="bg-gray-100 text-gray-900">Seletors</option>
+                  <option class="bg-gray-100 text-gray-900">Canada</option>
+                  <option class="bg-gray-100 text-gray-900">Mexico</option>
+                  <option class="bg-gray-100 text-gray-900">Germany</option>
+                  <option class="bg-gray-100 text-gray-900">France</option>
+                </select>
+              </div>
+              <div class="">
+                <select
+                  id="countries"
+                  name="countries"
+                  class="mt-1 block w-56 py-2 px-3 border border-gray-300 bg-[#2042B6] text-white rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                >
+                  <option class="bg-gray-100 text-gray-900">
+                    Types of IPO
+                  </option>
+                  <option class="bg-gray-100 text-gray-900">Canada</option>
+                  <option class="bg-gray-100 text-gray-900">Mexico</option>
+                  <option class="bg-gray-100 text-gray-900">Germany</option>
+                  <option class="bg-gray-100 text-gray-900">France</option>
+                </select>
+              </div>
+            </div>
+            <div class="">
+              <div
+                class="flex gap-2 items-center bg-[#EFF3F6] p-1 px-8 rounded-full"
+              >
+                <h3>1Y</h3>
+                <h3>YTD</h3>
+                <h3 class="bg-[#2042B6] px-3 py-1 text-white rounded-full">
+                  6M
+                </h3>
+                <h3>1M</h3>
+                <h3>1W</h3>
+              </div>
+            </div>
+          </div>
+          <!-- chart -->
+          <div style="position: relative; height: 60vh">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------- Company Table --------------------->
+    <div class="bg-white p-6 max-w-[1400px] shadow-md mx-auto rounded-2xl">
+      <div
+        class="flex items-center justify-between max-w-[1400px] mx-auto my-6"
+      >
+        <div class="">
+          <h2 class="text-4xl font-medium font-serif">All Companies</h2>
+        </div>
+        <div
+          class="flex items-center gap-1 bg-[#F3F3F3] py-3 px-5 w-[500px] rounded-md border border-[#DADADA]"
+        >
+          <i class="ri-search-line text-gray-900 text-xl"></i>
+          <input
+            type="text"
+            class="bg-[#F3F3F3] placeholder:text-gray-900 placeholder:font-serif placeholder:text-xl outline-none w-full"
+            placeholder="Search Companies"
+          />
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="max-w-[1400px] mx-auto">
+        <div class="overflow-x-auto overflow-y-auto h-[450px]">
+          <table class="table table-zebra">
+            <thead>
+              <tr>
+                <th class="text-lg text-gray-900">Company</th>
+                <th class="text-gray-900">Ticker</th>
+                <th class="text-gray-900">Vertical</th>
+                <th class="text-gray-900">Price</th>
+                <th class="text-gray-900">Market Cap ($B)</th>
+                <th class="text-gray-900">Revenue Growth</th>
+                <th class="text-gray-900">Gross Margin</th>
+                <th class="text-gray-900">EV/Revenue</th>
+                <th class="text-gray-900">YTD Performance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Adyen</th>
+                <td>AFRM</td>
+                <td>Payments</td>
+                <td>$17.15</td>
+                <td>$50.5</td>
+                <td>49.0%</td>
+                <td>15.8%</td>
+                <td>6.3</td>
+                <td>24.3%</td>
+              </tr>
+              <tr>
+                <th>Alkami Technology</th>
+                <td>AFRM</td>
+                <td>Wealth</td>
+                <td>$19.15</td>
+                <td>$40.5</td>
+                <td>30.0%</td>
+                <td>20.8%</td>
+                <td>6.3</td>
+                <td>65.3%</td>
+              </tr>
+              <tr>
+                <th>Affirm</th>
+                <td>ALKT</td>
+                <td>B2B SaaS</td>
+                <td>$45.0</td>
+                <td>$60.4</td>
+                <td>23.0%</td>
+                <td>18.8%</td>
+                <td>6.3</td>
+                <td>30.3%</td>
+              </tr>
+              <tr>
+                <th>Virtu Financial Inc</th>
+                <td>BKKT</td>
+                <td>Lending</td>
+                <td>$20.8</td>
+                <td>$25.5</td>
+                <td>78.0%</td>
+                <td>60.8%</td>
+                <td>60.3</td>
+                <td>30.3%</td>
+              </tr>
+              <tr>
+                <th>Bakkt Holdings</th>
+                <td>AFRM</td>
+                <td>B2B SaaS</td>
+                <td>$19.5</td>
+                <td>$87.5</td>
+                <td>49.6%</td>
+                <td>63.5%</td>
+                <td>9.3</td>
+                <td>12.3%</td>
+              </tr>
+              <tr>
+                <th>AvidXchange</th>
+                <td>AFRM</td>
+                <td>Payments</td>
+                <td>$56.9</td>
+                <td>$80.2</td>
+                <td>89.0%</td>
+                <td>23.8%</td>
+                <td>10.3</td>
+                <td>85.3%</td>
+              </tr>
+              <tr>
+                <th>Adyen</th>
+                <td>ALKT</td>
+                <td>Wealth</td>
+                <td>$45.15</td>
+                <td>$60.5</td>
+                <td>78.0%</td>
+                <td>65.8%</td>
+                <td>56</td>
+                <td>48.6%</td>
+              </tr>
+              <tr>
+                <th>Affirm</th>
+                <td>BKKT</td>
+                <td>Payments</td>
+                <td>$17.15</td>
+                <td>$50.5</td>
+                <td>49.0%</td>
+                <td>15.8%</td>
+                <td>6.3</td>
+                <td>24.3%</td>
+              </tr>
+              <tr>
+                <th>Alkami Technology</th>
+                <td>AFRM</td>
+                <td>Lending</td>
+                <td>$63.15</td>
+                <td>$66.5</td>
+                <td>99.0%</td>
+                <td>66.8%</td>
+                <td>96.3</td>
+                <td>23.3%</td>
+              </tr>
+              <tr>
+                <th>Virtu Financial Inc</th>
+                <td>ALKT</td>
+                <td>B2B SaaS</td>
+                <td>$17.15</td>
+                <td>$50.5</td>
+                <td>49.0%</td>
+                <td>15.8%</td>
+                <td>6.3</td>
+                <td>24.3%</td>
+              </tr>
+              <tr>
+                <th>Affirm</th>
+                <td>BKKT</td>
+                <td>Payments</td>
+                <td>$17.15</td>
+                <td>$50.5</td>
+                <td>49.0%</td>
+                <td>15.8%</td>
+                <td>6.3</td>
+                <td>24.3%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center gap-5 mt-8">
+      <button class="btn bg-[#2042B6] text-white rounded-full">
+        Download ‘All Companies’ Data</button
+      ><button class="btn bg-[#2042B6] text-white rounded-full">
+        View Methodology
+      </button>
+    </div>
+
+    <!-------------------------- Listing -------------------------->
+    <div class=" max-w-7xl mx-auto">
+      <div class=" max-w-3xl space-y-3">
+        <h2 class="text-4xl font-medium font-serif">
+          Potential Future Listings
+        </h2>
+        <p>
+          Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum, ac aliquet odio mattis. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
