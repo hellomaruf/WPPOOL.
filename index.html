@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="chart-config.js" defer></script>
     <link rel="icon" type="Images" href="Images/fav.png" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
@@ -28,25 +29,27 @@
   </head>
   <body class="bg-[#EDEDED]">
     <!-------------- navbar -------------->
-    <div class="bg-[#2042B6] relative">
-      <div
-        class="flex items-center justify-between h-24 max-w-[1400px] mx-auto"
-      >
-        <div class="">
-          <img src="Images/wppool-logo.png" alt="" />
-        </div>
-        <div class="flex items-center gap-4 text-white">
-          <button
-            class="border-2 h-10 w-10 rounded-full flex items-center justify-center text-xl"
-          >
-            <i class="ri-share-fill"></i>
-          </button>
-          <button class="border-2 rounded-full p-3 px-6">
-            Download the 2024 Report
-          </button>
-          <button class="text-2xl toggle-btn">
-            <i class="ri-menu-line"></i>
-          </button>
+    <div class="sticky top-0 w-full z-20 ">
+      <div class="nav bg-[#2042B6] transition duration-300  relative mx-12 rounded-b-xl">
+        <div
+          class="flex items-center justify-between h-20 max-w-[1400px] mx-auto"
+        >
+          <div class="">
+            <img class="nav-logo" src="Images/wppool-logo.png" alt="" />
+          </div>
+          <div class="flex items-center gap-3 text-white ">
+            <button
+              class="share border-2 h-10 w-10 rounded-full flex items-center justify-center text-xl"
+            >
+              <i class="ri-share-fill"></i>
+            </button>
+            <button class="download border-2  rounded-full p-3 px-6">
+              Download the 2024 Report
+            </button>
+            <button class="menu text-2xl toggle-btn">
+              <i class="ri-menu-line"></i>
+            </button>
+          </div>
         </div>
       </div>
       <!-- Menu -->
@@ -86,7 +89,7 @@
     </div>
 
     <!--------------- Hero section --------------->
-    <div class="bg-[#2042B6] relative">
+    <div class="bg-[#2042B6] -top-20 relative pt-16">
       <div
         class="relative flex items-center justify-center flex-col max-w-4xl mx-auto p-16"
       >
@@ -519,23 +522,22 @@
             <img class="rounded-xl" src="Images/slider.png" alt="" srcset="" />
           </div>
         </div>
-        
+
         <div class=""></div>
         <!-- <div class="swiper-pagination"></div> -->
       </div>
       <div class="mt-6 flex items-center justify-between">
-
-        <div class=" flex items-center gap-5">
+        <div class="flex items-center gap-5">
           <div class="flex items-center gap-3">
             <div
               class="prev bg-white hover:bg-[#2042B6] hover:text-white text-[#2042B6] transition duration-300 shadow-lg w-16 h-16 rounded-full flex items-center justify-center"
             >
-              <i class="ri-arrow-left-line text-2xl "></i>
+              <i class="ri-arrow-left-line text-2xl"></i>
             </div>
             <div
               class="next bg-white hover:bg-[#2042B6] hover:text-white text-[#2042B6] transition duration-300 shadow-lg w-16 h-16 rounded-full flex items-center justify-center"
             >
-              <i class="ri-arrow-right-line text-2xl "></i>
+              <i class="ri-arrow-right-line text-2xl"></i>
             </div>
           </div>
           <div class="">
@@ -556,10 +558,10 @@
         </div>
         <div class="z-10">
           <button
-          class="border-2 bg-[#2042B6] text-white rounded-full p-3 px-6"
-        >
-          Download the 2024 Report
-        </button>
+            class="border-2 bg-[#2042B6] text-white rounded-full p-3 px-6"
+          >
+            Download the 2024 Report
+          </button>
         </div>
       </div>
       <div class="absolute top-10 right-0">
@@ -920,18 +922,18 @@
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
         autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
         navigation: {
-        nextEl: ".next",
-        prevEl: ".prev",
-      },
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
       });
     </script>
   </body>

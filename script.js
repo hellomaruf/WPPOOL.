@@ -1,14 +1,8 @@
+// Side Menu**************
 const toggleBtn = document.querySelector(".toggle-btn");
 const dropdown = document.querySelector(".dropdown");
 const closeMenu = document.querySelector(".close");
 let isOpen = false;
-// toggleBtn.addEventListener('click', () => {
-//     dropdown.classList.toggle('top-0')
-// })
-
-// closeMenu.addEventListener('click', () => {
-//     dropdown.classList.toggle('-top-[600px]')
-// })
 toggleBtn.addEventListener("click", () => {
   isOpen = !isOpen;
   if (isOpen) {
@@ -29,7 +23,35 @@ closeMenu.addEventListener("click", () => {
     dropdown.classList.remove("top-0");
   }
 });
-console.log(isOpen);
+
+// Navbar***********
+document.addEventListener("scroll", () => {
+  let nav = document.querySelector(".nav");
+  let share = document.querySelector(".share");
+  let download = document.querySelector(".download");
+  let menu = document.querySelector(".menu");
+  let nav_logo = document.querySelector(".nav-logo");
+  console.log(nav);
+  console.log(window.scrollY);
+  if (window.scrollY > 0) {
+    nav.classList.add("bg-[#F3F3F3]");
+    share.classList.add("text-gray-900");
+    share.classList.add("border-[#AFCD80]");
+    download.classList.add("text-gray-900");
+    download.classList.add("border-[#2042B6]");
+    menu.classList.add("text-gray-900");
+    nav_logo.src = "Images/logo1.png";
+  } else {
+    nav.classList.remove("bg-[#F3F3F3]");
+    share.classList.remove("text-gray-900");
+    share.classList.remove("border-[#AFCD80]");
+    download.classList.remove("text-gray-900");
+    download.classList.remove("border-[#2042B6]");
+    menu.classList.remove("text-gray-900");
+    nav_logo.src = "Images/wppool-logo.png";
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const ctx = document.getElementById("myChart").getContext("2d");
   const data = {
