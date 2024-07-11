@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="chart-config.js" defer></script>
+    <link rel="icon" type="Images" href="Images/fav.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
@@ -27,7 +28,7 @@
   </head>
   <body class="bg-[#EDEDED]">
     <!-------------- navbar -------------->
-    <div class="bg-[#2042B6]">
+    <div class="bg-[#2042B6] relative">
       <div
         class="flex items-center justify-between h-24 max-w-[1400px] mx-auto"
       >
@@ -43,8 +44,44 @@
           <button class="border-2 rounded-full p-3 px-6">
             Download the 2024 Report
           </button>
-          <button class="text-2xl"><i class="ri-menu-line"></i></button>
+          <button class="text-2xl toggle-btn">
+            <i class="ri-menu-line"></i>
+          </button>
         </div>
+      </div>
+      <!-- Menu -->
+      <div
+        class="dropdown bg-white transition duration-300 ease-linear px-10 py-6 absolute -top-[600px] z-10 right-0 rounded-bl-3xl space-y-6"
+      >
+        <div class="flex items-center gap-3">
+          <div class="">
+            <button
+              class="h-10 w-10 rounded-full flex items-center bg-[#AFCD80] text-white justify-center text-xl"
+            >
+              <i class="ri-share-fill"></i>
+            </button>
+          </div>
+          <div class="">
+            <button
+              class="border-2 bg-[#2042B6] text-white rounded-full p-3 px-6"
+            >
+              Download the 2024 Report
+            </button>
+          </div>
+          <div class="close cursor-pointer">
+            <i class="ri-close-large-line text-xl font-semibold"></i>
+          </div>
+        </div>
+        <ul class="space-y-8">
+          <li class="text-xl">The WPPOOL Index</li>
+          <li class="text-xl">All Companies</li>
+          <li class="text-xl">Potential Future Listings</li>
+          <li class="text-xl">State of USA</li>
+          <li class="text-xl">Stories & Ideas</li>
+          <li class="text-xl">About WPPOOL</li>
+          <li class="text-xl">WPPOOL Portfolio Companies</li>
+          <li class="text-xl font-serif text-blue-600">Visit WPPOOL</li>
+        </ul>
       </div>
     </div>
 
@@ -445,42 +482,90 @@
       </div>
     </div>
 
-    <!-- <div class="mt-24">
+    <div class="mt-24 max-w-7xl mx-auto relative">
+      <div class="space-y-3 pb-4">
+        <h2 class="text-4xl font-medium font-serif">State of USA</h2>
+        <div class="">
+          <select
+            id="countries"
+            name="countries"
+            class="mt-1 block w-32 text-3xl font-serif py-2 px-3 border border-gray-300 bg-[#2042B6] text-white rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          >
+            <option class="bg-gray-100 text-gray-900 text-3xl">2024</option>
+            <option class="bg-gray-100 text-gray-900 text-3xl">2023</option>
+            <option class="bg-gray-100 text-gray-900 text-3xl">2022</option>
+            <option class="bg-gray-100 text-gray-900 text-3xl">2021</option>
+            <option class="bg-gray-100 text-gray-900 text-3xl">2020</option>
+          </select>
+        </div>
+        <p>
+          Click through the slides or download the report to view natively on
+          your device.
+        </p>
+      </div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="Images/slider.png" alt="" srcset="" />
+            <img class="rounded-xl" src="Images/slider.png" alt="" srcset="" />
           </div>
           <div class="swiper-slide">
-            <img
-              class=""
-              src="Images/slider3.png"
-              alt=""
-              srcset=""
-            />
+            <img class="rounded-xl" src="Images/slider1.png" alt="" srcset="" />
           </div>
-          <div class="swiper-slide">
-            <img
-              class="w-full"
 
-              src="Images/slider1.png"
-              alt=""
-              srcset=""
-            />
+          <div class="swiper-slide">
+            <img class="rounded-xl" src="Images/slider3.png" alt="" srcset="" />
           </div>
           <div class="swiper-slide">
-            <img
-              class="w-full"
-
-              src="Images/slider2.png"
-              alt=""
-              srcset=""
-            />
+            <img class="rounded-xl" src="Images/slider.png" alt="" srcset="" />
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        
+        <div class=""></div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
-    </div> -->
+      <div class="mt-6 flex items-center justify-between">
+
+        <div class=" flex items-center gap-5">
+          <div class="flex items-center gap-3">
+            <div
+              class="prev bg-white hover:bg-[#2042B6] hover:text-white text-[#2042B6] transition duration-300 shadow-lg w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <i class="ri-arrow-left-line text-2xl "></i>
+            </div>
+            <div
+              class="next bg-white hover:bg-[#2042B6] hover:text-white text-[#2042B6] transition duration-300 shadow-lg w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <i class="ri-arrow-right-line text-2xl "></i>
+            </div>
+          </div>
+          <div class="">
+            <div class="flex items-center gap-3">
+              <h4>Page</h4>
+              <select
+                id="countries"
+                name="countries"
+                class="mt-1 block w-32 text-base p-[18px] shadow-xl border text-gray-900 rounded-full focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              >
+                <option class="bg-gray-100 text-gray-900">1 and 2</option>
+                <option class="bg-gray-100 text-gray-900">2 and 3</option>
+                <option class="bg-gray-100 text-gray-900">3 and 4</option>
+              </select>
+              <h4>of 37</h4>
+            </div>
+          </div>
+        </div>
+        <div class="z-10">
+          <button
+          class="border-2 bg-[#2042B6] text-white rounded-full p-3 px-6"
+        >
+          Download the 2024 Report
+        </button>
+        </div>
+      </div>
+      <div class="absolute top-10 right-0">
+        <img src="Images/slide-bg.png" alt="" srcset="" />
+      </div>
+    </div>
 
     <!------------------------- Storis ------------------------->
     <div class="max-w-7xl mx-auto mt-24">
@@ -798,7 +883,7 @@
               </p>
             </div>
             <hr class="border border-gray-400" />
-            <div class="">
+            <div class="flex gap-4">
               <i class="ri-linkedin-box-fill text-4xl text-[#9FA0A1]"></i>
               <i class="ri-twitter-fill text-4xl text-[#9FA0A1]"></i>
             </div>
@@ -807,7 +892,7 @@
       </div>
 
       <div class="grid grid-cols-2 gap-4 max-w-7xl mx-auto">
-        <div class=" space-y-3">
+        <div class="space-y-3">
           <div class="flex items-center gap-3 font-semibold text-gray-500">
             <h4>©2024</h4>
             <h4>Terms of Use</h4>
@@ -833,13 +918,20 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
+        slidesPerView: 2,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
         spaceBetween: 30,
-        centeredSlides: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+      },
       });
     </script>
   </body>
